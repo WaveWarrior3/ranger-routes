@@ -346,7 +346,6 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
 ####   - Give 2 Rare Candies to Hawlucha
 ####   - Teach Encore over Aerial Ace (Slot 4)
 ####   - Teach Swords Dance over Roost (Slot 3)
-####   - Swap Oran Berry to Hawlucha if holding it
   :::
   :::if{source="Hawlucha" condition="speed=~(x/x/12+) && startingLevel=19"}
  ####  - Pick up hidden **X-Speed** if you didn't yet
@@ -359,7 +358,6 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
 ####   - Give 2 Rare Candies to Hawlucha
 ####   - Teach Swords Dance over Roost (Slot 2)
 ####   - Teach Rock Smash over Aerial Ace (Slot 3)
-####   - Swap Oran Berry to Hawlucha if holding it
   :::
   :::if{source="Hawlucha" condition="speed=~(x/24+/1+) && startingLevel=20"}
  ####  - Pick up hidden **X-Speed** if you didn't yet
@@ -373,7 +371,7 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
 :::::::trainer[Leader Grant]
   :::::pokemon[Amaura]
     - Leer until Quackling dies
-    - Swap to Hawlucha (check nature if still have Oran Berry)
+    - Swap to Hawlucha
     - Karate Chop/Rock Smash
    :::if{source="Hawlucha" condition="startingLevel=19"}
      ::damage[Karate Chop without Leer ranges]{source="Hawlucha" special=false offensive=true healthThreshold=79 movePower=50 effectiveness=4 level=21 opponentLevel=25 stab=true opponentStat=35 theme=error}
@@ -382,7 +380,7 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
      ::damage[Karate Chop without Leer ranges]{source="Hawlucha" special=false offensive=true healthThreshold=79 movePower=50 effectiveness=4 level=22 opponentLevel=25 stab=true opponentStat=35 theme=error}
     :::
   :::::
-  :::::pokemon[Tyrunt]{info="if Unburden, you will outspeed after 2 Rock Tombs with Oran Berry" infoColor=blue}
+  :::::pokemon[Tyrunt]
     :::if{source="Hawlucha" condition="startingLevel=19"}
       ::damage[Tyrunt Rock Tomb at L21 does]{source="Hawlucha" special=false offensive=false movePower=60 level=21 opponentLevel=25 stab=true opponentStat=55}
     :::
@@ -527,6 +525,10 @@ Use a Repel
     :::
   :::::  
 :::::::
+
+Pick up **Black Belt**
+
+
 :info[Use a Soda Pop if can die to Confusion]{color=yellow}
 :::if{source="Hawlucha" condition="startingLevel=19"}
 ::damage[Chimecho’s Confusion does at L24]{source="Hawlucha" special=true offensive=false movePower=50 level=24 opponentLevel=24 stab=true effectiveness=2 opponentStat=55}
@@ -564,7 +566,7 @@ Use a Repel
      - Fling
     :::
     :::if{source="Hawlucha" condition="speed=(x/x/10+) && startingLevel=19"}
-     - Swords Dance (or X-Speed anyway for friendship gain, Fake Out is most likely outcome)
+     - Swords Dance (again if Fake Out)
      - Encore (if no Fake Out/Light Screen, the run is over, heal until Light Screen?)
      - Swords Dance x2
      - Encore
@@ -588,7 +590,7 @@ Use a Repel
      - Wing Attack
     :::
     :::if{source="Hawlucha" condition="speed=(x/24+/#) && startingLevel=20  && atk=~(x/x/19+)"}
-     - Swords Dance (or X-Speed anyway for friendship gain, Fake Out is most likely outcome)
+     - Swords Dance (again if Fake Out)
      - Encore (if no Fake Out/Light Screen, the run is over, heal until Light Screen?)
      - Swords Dance x2
      - Encore
@@ -596,7 +598,7 @@ Use a Repel
      - Fling
     :::
     :::if{source="Hawlucha" condition="speed=(x/24+/#) && startingLevel=20  && atk=(x/x/19+)"}
-     - Swords Dance (or X-Speed anyway for friendship gain, Fake Out is most likely outcome)
+     - Swords Dance (again if Fake Out)
      - Encore (if no Fake Out/Light Screen, the run is over, heal until Light Screen?)
      - Swords Dance x2
      - Encore
@@ -737,11 +739,14 @@ Pickup **TM47 Low Sweep**
     - **[Mega Evolve]** Metal Sound x2 
  ::::
 :::::
+
+Say yes to getting Lucario and give it a one character nickname
+
 :::::card
-#### - Say yes to getting Lucario and leave
 ####  - Get Lapras
 ####  - Heal Hawlucha to full
 ####  - Repel
+####  - Equip Black Belt to Hawlucha
 ####  - Teach Rock Smash to Lapras (Slot 1)
 ####  - Teach Strength to Lapras (Slot 2)
 ####  - Teach Surf to Lapras (Slot 3)
@@ -915,21 +920,14 @@ Go right after the first climbing rope
 ::::::::::if{source="Hawlucha" condition="speed=(10-/x/x) && startingLevel=20 || speed=(18-/x/x) && startingLevel=19"}
 :::::::trainer[Leader Ramos (with Lucario)]
   :::::pokemon[Jumpluff]
-     - Swords Dance
+     - **[Mega Evolve]** Swords Dance
      - Rock Tomb
   :::::
   :::::pokemon[Gogoat]
-    - Switch to Hawlucha
-    - Swords Dance
-    :::if{source="Hawlucha" condition="atk=(x/x/15+)"}
-      - Wing Attack
-    :::
-    :::if{source="Hawlucha" condition="atk=~(x/x/15+)"}
-      - Flying Press
-    :::
+    - Low Sweep
   :::::
   :::::pokemon[Weepinbell]
-    - Wing Attack (Low Sweep if Lucario)
+    - Low Sweep
   :::::
 :::::::
 ::::::::::
@@ -950,6 +948,7 @@ Pickup hidden **Power Plant Pass**
 
 :::card{theme="info"}
 - Heal Lucario if got hit by Acrobatics
+- Equip **Black Belt**
 - Turn off Experience Share
 - Swap Hawlucha with Lucario
 :::
@@ -983,7 +982,7 @@ Pickup hidden **Power Plant Pass**
 :::::
 :::::trainer[Team Flare Grunt]
  ::::pokemon[Mightyena]{}
-    - Low Sweep (x2)
+    - Low Sweep
  ::::
 :::::
 
@@ -1108,18 +1107,25 @@ Max Repel (drop it in gym)
 Pickup **Rare Candy**
 :::::trainer[Leader Valerie]
   ::::pokemon[Mawile]
-    - **[Mega Evolve]** Swords Dance x3
-    - Low Sweep
+    - Swords Dance x2
+    - _If Iron Defense_
+      - Shadow Claw
+      - Low Sweep
+    - _Otherwise_
+      - Low Sweep
   ::::
   ::::pokemon[Mr. Mime]
     - Shadow Claw
   ::::
   ::::pokemon[Sylveon]{info="Dazzling Gleam does 66 (67), Quick Attack does 8 (9)" infoColor=blue}
+    - Low Sweep (Shadow Claw if you've already taught Aura Sphere)
     - Shadow Claw
   ::::
 :::::
 
 :info[Heal if 39 (40)]{color=yellow}
+
+If healing, do so in front of the button to change conveyer direction and use a Max Repel
 
 :::::trainer[Team Flare Admin]
  ::::pokemon[Scraggy]
@@ -1144,9 +1150,9 @@ Pickup **Rare Candy**
 
 :info[Heal if 106 (109) HP or below]{color=yellow}
 
-Use 3 Proteins (Escape Rope menu if you don't need to heal right now)
+Use 3 Proteins (or delay to Escape Rope menu)
 
-Max Repel → Keep applied until off of Mamoswine
+Max Repel if you haven't yet → Keep applied until off of Mamoswine
 :::::trainer[Team Flare Grunt]
  ::::pokemon[Golbat]
     - Swords Dance
@@ -1158,19 +1164,21 @@ Max Repel → Keep applied until off of Mamoswine
  ::::
  ::::pokemon[Manectric]
     - _If you got Acrobatics_
-      - Aura Sphere x2
+      - Aura Sphere (x2)
     - _Otherwise_
       - Rock Tomb
  ::::
 :::::
 :::::trainer[Team Flare Mable]
- ::::pokemon[Houndoom]{info="Fire Fang does 90-104 (108)" infoColor=red}
-    - **[Mega Evolve]** Aura Sphere
+ ::::pokemon[Houndoom]
+    - Aura Sphere
  ::::
 :::::
 Pickup **PP Up**
 
 Heal to full
+
+Equip **Lucarionite**
 
 Escape Rope
 
@@ -1362,7 +1370,7 @@ Heal if you can't survive two hits
 
 :::::trainer[Team Flare Xerosic]
  ::::pokemon[Crobat]{info="Air Slash does 36/(37)" infoColor=blue}
-    - **[Mega Evolve]** Swords Dance x2
+    - **[Mega Evolve]** Swords Dance x2 **(Speedtie turn 1, watch out for flinch)**
     - Shadow Claw
  ::::
  ::::pokemon[Malamar]
@@ -1399,8 +1407,8 @@ PC Heal Lucario and Lapras:
  ::::
  ::::pokemon[Gyarados]
     - Switch to Lapras
-    - Rock Smash
-    - _If no Outrage_
+    - Heal Lucario to full (Rock Smash if already full)
+    - _If no Outrage AND Lucario does not survive 132 (134)_
       - Switch to Squirtle, Revive Lapras, and try again
     - Switch to Lucario
     - Swords Dance
@@ -1411,7 +1419,9 @@ PC Heal Lucario and Lapras:
  ::::
 :::::
 
-:info[Heal to full if low]{color="yellow"}
+Equip **Black Belt** at some point before second Admin Double fight
+
+:info[Heal to full if hit by Earthquake]{color="yellow"}
 
 :::::trainer[Team Flare Double 1]
  ::::pokemon[Liepard]
@@ -1423,10 +1433,10 @@ PC Heal Lucario and Lapras:
 :::::
 :::::trainer[Team Flare Double 2]
  ::::pokemon[Mightyena]
-    - **[Mega Evovle]** Aura Sphere
+    - Aura Sphere
  ::::
  ::::pokemon[Manectric]{info="Discharge does 54 (55)" infoColor=blue}
-    - Aura Sphere
+    - Aura Sphere (4/16 OHKO without help)
  ::::
 :::::
 
@@ -1436,7 +1446,7 @@ PC Heal Lucario and Lapras:
  ::::pokemon[Scrafty]
     - Aura Sphere
  ::::
- ::::pokemon[Houndoom]{info="10/16 OHKO with no help" infoColor=blue}
+ ::::pokemon[Houndoom]
     - Aura Sphere
  ::::
 :::::
@@ -1457,8 +1467,8 @@ PC Heal Lucario and Lapras:
 :::::
 :::::trainer[Team Flare Admin 3 (Left)]
  ::::pokemon[Swalot]{info="36-42 (43) for -2 Sp.Def +1 Spit Up" infoColor=blue}
-    - **[Mega Evolve]** Close Combat x2 (+ Aura Sphere)
-    - _90.625% 2HKO without crit_
+    - Swords Dance
+    - Close Combat x2 (92.2% 2HKO)
  ::::
 :::::
 :::::trainer[Team Flare Admin 4 (Middle)]
@@ -1473,13 +1483,14 @@ Catch Xerneas with Master Ball
   - Select No then Yes to decline adding Xerneas to party
 :::::trainer[Team Flare Lysandre]
  ::::pokemon[Mienfoo]
-    - **[Mega Evolve]** Aura Sphere
+    - Close Combat
  ::::
  ::::pokemon[Pyroar]
     - Aura Sphere
  ::::
  ::::pokemon[Honchkrow]
-    - Aura Sphere
+    - Swords Dance
+    - Close Combat
  ::::
  ::::pokemon[Gyarados]
     - Close Combat
@@ -1496,26 +1507,25 @@ Get the train station **Rare Candy**
 
 :::::trainer[Pokémon Professor Sycamore]{info="Remember HP after" infoColor=pink}
  ::::pokemon[Venusaur]
-    - Swords Dance x2
-    - Close Combat
+    - Swords Dance (x2)
+    - Close Combat (10/16 OHKO at +2, finish with Aura Sphere)
  ::::
  ::::pokemon[Charizard]
-    - Rock Tomb/Close Combat
+    - Rock Tomb
  ::::
  ::::pokemon[Blastoise]
     - Close Combat
  ::::
 :::::
 
-:info[Heal if 46 HP or bellow]{color=yellow}
+:info[Heal if 46 HP or below]{color=yellow}
 
 :::::trainer[Pokémon Trainer Shauna]
  ::::pokemon[Delcatty]
-    - Swords Dance (again if Charm)
     - Aura Sphere
  ::::
- ::::pokemon[Goodra]{info="Earthquake does 108-126 (128) without Close Combat" infoColor=blue}
-    - Close Combat (5/16 OHKO, can Mega for safety if didn't Swords Dance)
+ ::::pokemon[Goodra]
+    - Close Combat
  ::::
  ::::pokemon[Greninja]
     - Aura Sphere
@@ -1529,11 +1539,8 @@ Get the train station **Rare Candy**
     - Aura Sphere
  ::::
  ::::pokemon[Roserade]{info="Petal Dance can do 54 (55)" infoColor=blue}
-    - _If 55- HP_
-      - **[Mega Evolve]** Close Combat
-    - _Otherwise_ 
-      - Swords Dance
-      - Close Combat
+    - Swords Dance
+    - Close Combat
  ::::
 :::::
 
@@ -1541,13 +1548,18 @@ Free Heal
 
 :::::trainer[Pokémon Trainer Trevor]
  ::::pokemon[Raichu]
-    - **[Mega Evolve]** Aura Sphere
+    - Close Combat
  ::::
  ::::pokemon[Florges]
-    - Close Combat (7/16 OHKO, finish with Aura Sphere)
+    - _If Static_
+      - Swords Dance (fully para + Moonblast is a death)
+      - Full Restore
+      - Close Combat
+    - _Otherwise_
+      - Close Combat
  ::::
  ::::pokemon[Aerodactyl]
-    - Aura Sphere
+    - Rock Tomb
  ::::
 :::::
 
@@ -1588,7 +1600,7 @@ Fly out of the forest
 :::::
 :::::trainer[Ace Trainer Theo (yellow platform)]
  ::::pokemon[Beartic]
-    - Close Combat
+    - Aura Sphere
  ::::
  ::::pokemon[Vanilluxe]
     - Aura Sphere
@@ -1601,7 +1613,7 @@ Heal to full
 
 :::::trainer[Leader Wulfric]
   ::::pokemon[Abomasnow]
-    - Close Combat
+    - Aura Sphere
   ::::
   ::::pokemon[Cryogonal]
     - Rock Tomb
@@ -1613,12 +1625,14 @@ Heal to full
 
 :::::trainer[Ace Trainer Robbie]
  ::::pokemon[Carbink]{info="Moonblast does 40 (42)" infoColor=blue}
-    - **[Mega Evolve]** Close Combat (8/16 OHKO)
+    - Swords Dance (x2 if you don't want to risk static)
+    - Close Combat
  ::::
- ::::pokemon[Raichu]{info=" Quick Attack does 15" infoColor=blue}
-    - Aura Sphere   (14/16 OHKO)
+ ::::pokemon[Raichu]{info="Quick Attack does 15" infoColor=blue}
+    - Close Combat
  ::::
- ::::pokemon[Kingdra]
+ ::::pokemon[Kingdra]{info="Scald does 60 (61)" infoColor=blue}
+    - (Heal para if static)
     - Close Combat
  ::::
 :::::
@@ -1634,6 +1648,8 @@ Heal if 108- HP
 Use **Rare Candy**
 
 Teach Shadow Claw over Aura Sphere (slot 1)
+
+Equip **Lucarionite**
 
 
 :::::trainer[Pokémon Trainer Calem]
@@ -1778,11 +1794,11 @@ Buy Full Restores (>) if none left or low on Hypers
  ::::pokemon[Noivern]
     - Rock Tomb (Close Combat if you didn't use one on Probopass)
  ::::
- ::::pokemon[Druddigon]
+ ::::pokemon[Druddigon]{info="Rough Skin does 24" infoColor=blue}
     - Close Combat
  ::::
  ::::pokemon[Altaria]
-    - Shadow Claw
+    - Close Combat
  ::::
 :::::
 
