@@ -11,9 +11,7 @@
    18 -> 2,   3,   3,   3,   1,   9,
 :::
 :::tracker{species="Hawlucha" generation=6 baseStats="[[78, 92, 75, 74, 63, 118]]"}
-19:
-   19 -> 0,   0,   0,   0,   0,   0,
-   20 -> 0,   0,   0,   0,   0,   0,
+21:
    21 -> 0,   0,   0,   0,   0,   0,
    22 -> 1,   2,   0,   1,   0,   0,  # Amaura (1 HP), Tyrunt (1 Atk), Lucario (1 Atk, 1 Sp.Atk)
    23 -> 1,   3,   0,   2,   0,   2,  # Lucario (1 Atk, 1 Sp.Atk), Linoone (2 Spd)
@@ -27,37 +25,22 @@
    31 -> 5,   24,  0,   7,   1,   8,
    32 -> 5,   24,  0,   9,   3,  10,
    33 -> 5,   24,  0,  13,   3,  13,
-20:
-   20 -> 0,   0,   0,   0,   0,   0,
-   21 -> 0,   0,   0,   0,   0,   0,
-   22 -> 1,   2,   0,   1,   0,   0,  # Amaura (1 HP), Tyrunt (1 Atk), Lucario (1 Atk, 1 Sp.Atk)
-   23 -> 1,   3,   0,   2,   0,   2,  # Lucario (1 Atk, 1 Sp.Atk), Linoone (2 Spd)
-   24 -> 1,   6,   0,   2,   0,   3,  # Doduo (1 Atk), Helioptile (1 Spd), Granbull (2 Atk)
-   25 -> 1,   7,   0,   3,   1,   5,  # Chimecho (1 Sp.Atk, 1 Sp.Def), Golett (1 Atk), Meowstic (2 Spd)
-   26 -> 1,   9,   0,   5,   1,   5,  # Braixen (2 Sp.Atk), Absol (2 Atk)
-   27 -> 3,   11,  0,   5,   1,   6,
-   28 -> 3,   15,  0,   5,   1,   6,
-   29 -> 5,   18,  0,   5,   1,   6,
-   30 -> 5,   22,  0,   5,   1,   8,
-   31 -> 5,   24,  0,   7,   1,   8,
-   32 -> 5,   24,  0,   9,   3,  10,
-   33 -> 5,   24,  0,  13,   3,  13,
-#20:
-#   20 -> 0,   0,   0,   0,   0,   0,
-#   21 -> 0,   0,   0,   0,   0,   0,
-#   22 -> 0,   0,   0,   0,   0,   0,
-#   23 -> 1,   2,   0,   1,   0,   0,  # Amaura (1 HP), Tyrunt (1 Atk), Lucario (1 Atk, 1 Sp.Atk)
-#   24 -> 1,   3,   0,   2,   0,   2,  # Lucario (1 Atk, 1 Sp.Atk), Linoone (2 Spd)
-#   25 -> 1,   6,   0,   2,   0,   3,  # Doduo (1 Atk), Helioptile (1 Spd), Granbull (2 Atk)
-#   26 -> 1,   7,   0,   3,   1,   5,  # Chimecho (1 Sp.Atk, 1 Sp.Def), Golett (1 Atk), Meowstic (2 Spd)
-#   27 -> 1,   9,   0,   5,   1,   6,  # Braixen (2 Sp.Atk), Absol (2 Atk)
-#   28 -> 3,   13,  0,   5,   1,   6,
-#   29 -> 3,   17,  0,   5,   1,   6,
-#   30 -> 5,   22,  0,   5,   1,   6,
-#   31 -> 5,   22,  0,   7,   1,   8,
-#   32 -> 5,   24,  0,   7,   1,  10,
-#   33 -> 5,   24,  0,  13,   3,  10
+22:
+   22 -> 0,   0,   0,   0,   0,   0,
+   23 -> 1,   2,   0,   1,   0,   0,  # Amaura (1 HP), Tyrunt (1 Atk), Lucario (1 Atk, 1 Sp.Atk)
+   24 -> 1,   3,   0,   2,   0,   2,  # Lucario (1 Atk, 1 Sp.Atk), Linoone (2 Spd)
+   25 -> 1,   6,   0,   2,   0,   3,  # Doduo (1 Atk), Helioptile (1 Spd), Granbull (2 Atk)
+   26 -> 1,   7,   0,   3,   1,   5,  # Chimecho (1 Sp.Atk, 1 Sp.Def), Golett (1 Atk), Meowstic (2 Spd)
+   27 -> 1,   9,   0,   5,   1,   6,  # Braixen (2 Sp.Atk), Absol (2 Atk)
+   28 -> 3,   13,  0,   5,   1,   6,
+   29 -> 3,   17,  0,   5,   1,   6,
+   30 -> 5,   22,  0,   5,   1,   6,
+   31 -> 5,   22,  0,   7,   1,   8,
+   32 -> 5,   24,  0,   7,   1,  10,
+   33 -> 5,   24,  0,  13,   3,  10,
 :::
+
+
 
 :::tracker{species="Lucario" nature="hasty" generation=6 hpIV=6 attackIV=25 defenseIV=16 spAttackIV=25 spDefenseIV=19 speedIV=31 baseStats="[[70, 110, 70, 115, 70, 90]]"}
 :::
@@ -355,78 +338,89 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
   - _Half HP: 89.3% catch_
 
 :::::card{theme=warning}
-  :::if{source="Hawlucha" condition="startingLevel=19"}
+####  Level 19
 ####   - Heal Hawlucha if it got damaged
 ####   - Give 2 Rare Candies to Hawlucha
 ####   - Teach Encore over Aerial Ace (Slot 4)
 ####   - Teach Swords Dance over Roost (Slot 3)
-  :::
-  :::if{source="Hawlucha" condition="startingLevel=20"}
+####   - Get X-Speed unless 64+ Speed (x/x/22+)
+  
+####  Level 20
 ####   - Heal Hawlucha if it got damaged
 ####   - Give 1 Rare Candy to Hawlucha
 ####   - Teach Swords Dance over Roost (Slot 2)
 ####   - Teach Rock Smash over Aerial Ace (Slot 3)
-  :::
-####   - _Get X-Speed if unless 64+ Speed (x/x/22+)_
-
+####   - Get X-Speed unless 64+ Speed (x/x/22+)
 :::::
-
 
 :::::::trainer[Leader Grant]
   :::::pokemon[Amaura]
     - Leer until Quackling dies
     - Swap to Hawlucha
     - Karate Chop/Rock Smash
-   :::if{source="Hawlucha" condition="startingLevel=19"}
-     ::damage[Karate Chop without Leer ranges]{source="Hawlucha" special=false offensive=true healthThreshold=79 movePower=50 effectiveness=4 level=21 opponentLevel=25 stab=true opponentStat=35 theme=error}
-    :::
-   :::if{source="Hawlucha" condition="startingLevel=20"}
-     ::damage[Karate Chop without Leer ranges]{source="Hawlucha" special=false offensive=true healthThreshold=79 movePower=50 effectiveness=4 level=22 opponentLevel=25 stab=true opponentStat=35 theme=error}
-    :::
   :::::
   :::::pokemon[Tyrunt]
-    :::if{source="Hawlucha" condition="startingLevel=19"}
+    :::if{source="Hawlucha" condition="startingLevel=21"}
       ::damage[Tyrunt Rock Tomb at L21 does]{source="Hawlucha" special=false offensive=false movePower=60 level=21 opponentLevel=25 stab=true opponentStat=55}
     :::
-    :::if{source="Hawlucha" condition="startingLevel=20"}
+    :::if{source="Hawlucha" condition="startingLevel=22"}
       ::damage[Tyrunt Rock Tomb at L22 does]{source="Hawlucha" special=false offensive=false movePower=60 level=22 opponentLevel=25 stab=true opponentStat=55}
     :::
 
     - _Heal with Soda Pop if you are dead to Rock Tomb unless faster from Unburden_
-    :::if{source="Hawlucha" condition="atk=(x/26+/7-30) && startingLevel=19"}
-      - Karate Chop
-      - _If Karate Chop crits_
+
+    :::if{source="Hawlucha" condition="startingLevel=21"}
+
+      - **Karate Chop fight**
+      :::if{source="Hawlucha" condition="atk=(x/26+/7-30)"}
          - Karate Chop
-      - _Otherwise_
+         - _If Karate Chop crits_
+            - Karate Chop
+         - _Otherwise_
+            - Swords Dance
+            - Karate Chop
+      :::
+      :::if{source="Hawlucha" condition="atk=(21+/0-25/0-6) || atk=(x/x/31)"}
+         - Swords Dance x2
+         - Karate Chop
+      :::
+      :::if{source="Hawlucha" condition="atk=(16-20/x/x)"}
+         - Karate Chop
          - Swords Dance
          - Karate Chop
+      :::
+      :::if{source="Hawlucha" condition="atk=(15-/x/x)"}
+         - Swords Dance
+         - Karate Chop x2
+      :::
+
+      - **Rock Smash fight**
+
+      :::if{source="Hawlucha" condition="atk=(x/26+/26+)"}     
+         - Rock Smash
+         - _If Rock Smash crits AND gets defense drop_
+         - Rock Smash
+         - _Otherwise_
+         - Swords Dance
+         - Rock Smash
+      :::
+      :::if{source="Hawlucha" condition="atk=~(x/26+/26+)"}
+         - Swords Dance
+         - Rock Smash x2
+      :::
     :::
-    :::if{source="Hawlucha" condition="atk=(21+/0-25/0-6) && startingLevel=19 || atk=(x/x/31) && startingLevel=19"}
-      - Swords Dance x2
-      - Karate Chop
+
+    :::if{source="Hawlucha" condition="startingLevel=22"}
+      :::if{source="Hawlucha" condition="atk=(x/x/21+)"}
+         - Swords Dance x2
+         - Rock Smash
+      :::
+      :::if{source="Hawlucha" condition="atk=~(x/x/21+)"}
+         - Swords Dance
+         - Rock Smash x2
+      :::
     :::
-    :::if{source="Hawlucha" condition="atk=(16-20/x/x) && startingLevel=19"}
-      - Karate Chop
-      - Swords Dance
-      - Karate Chop
-    :::
-    :::if{source="Hawlucha" condition="atk=(15-/x/x) && startingLevel=19"}
-      - Swords Dance
-      - Karate Chop x2
-    :::
-    :::if{source="Hawlucha" condition="atk=(x/26+/26+) && startingLevel=20"}
-          
-      - Rock Smash
-      - _If Rock Smash crits AND gets defense drop_
-        - Rock Smash
-      - _Otherwise_
-        - Swords Dance
-        - Rock Smash
-    :::
-    :::if{source="Hawlucha" condition="atk=~(x/26+/26+) && startingLevel=20"}
-      - Swords Dance
-      - Rock Smash x2
-    :::
+
   ::::: 
 :::::::
 
@@ -444,28 +438,21 @@ Deposit Farfetch’d
 
 :::::::trainer[Leader Korrina]
   :::::pokemon[Lucario]
-    :::if{source="Hawlucha" condition="startingLevel=19"}
-      - Swords Dance x2-3
-      - Karate Chop
-      ::damage[Karate Chop +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=50 level=21 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
-    :::
-    :::if{source="Hawlucha" condition="startingLevel=20"}
-      - Swords Dance x2-3
-      - Rock Smash (x2)
-      ::damage[Rock Smash +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=40 level=21 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
-    :::
+
+   - Swords Dance x2-3
+   - Karate Chop/Rock Smash
+   ::damage[Karate Chop +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=50 level=21 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
+   ::damage[Rock Smash +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=40 level=21 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
+
 
   :::::
 
   :::::pokemon[Lucario]
-    :::if{source="Hawlucha" condition="startingLevel=19"}
-      - Karate Chop
-      ::damage[Karate Chop +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=50 level=22 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
-    :::
-    :::if{source="Hawlucha" condition="startingLevel=20"}
-      - Rock Smash
-      ::damage[Rock Smash +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=40 level=22 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
-    :::
+
+   - Karate Chop/Rock Smash
+   ::damage[Karate Chop +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=50 level=22 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
+   ::damage[Rock Smash +4 Range]{source="Hawlucha" special=false offensive=true healthThreshold=75 combatStages=4 theme=error effectiveness=2 movePower=40 level=22 effectiveness=2 opponentLevel=25 stab=true opponentStat=45 theme=error}
+
   :::::
 :::::::
 
@@ -476,14 +463,10 @@ Use a Repel
 :info[Heal to full]{color=yellow}
 :::::::trainer[Backpacker Lane]{info="Faster at 58+ Speed L22 (x/5+/#)  L23 (25+/#/#)" infoColor=blue}
   :::::pokemon[Linoone]
-    :::if{source="Hawlucha" condition="startingLevel=19"}
-     - Karate Chop x2 (+ Wing Attack)
+     - Karate Chop x2/Rock Smash x2 (+ Wing Attack)
      ::damage[Swords Dance + Karate Chop]{source="Hawlucha" special=false offensive=true healthThreshold=76 movePower=50 combatStages=2 effectiveness=2 level=22 opponentLevel=26 stab=true opponentStat=36 theme=error}
-    :::
-    :::if{source="Hawlucha" condition="startingLevel=20"}
-     - Rock Smash x2 (+ Wing Attack)
      - _If first Rock Smash hits into yellow and gets defense drop, Wing Attack kills_
-    :::
+
   :::::
 :::::::
 :info[Heal to full if took damage]{color=yellow}
@@ -493,24 +476,16 @@ Use a Repel
      - Wing Attack
   :::::
   :::::pokemon[Helioptile]{info="Has Quick Attack" infoColor="blue"}
-     :::if{source="Hawlucha" condition="startingLevel=19"}
-      - Karate Chop
+      - Karate Chop/Rock Smash
       ::damage[Heliptile QA does at 23]{source="Hawlucha" special=false offensive=false movePower=40 level=23 opponentLevel=25 stab=true opponentStat=25}
-     :::
-     :::if{source="Hawlucha" condition="startingLevel=20"}
-      - Rock Smash
-      ::damage[Heliptile QA does at 23]{source="Hawlucha" special=false offensive=false movePower=40 level=24 opponentLevel=25 stab=true opponentStat=25}
-     :::
+      ::damage[Heliptile QA does at 24]{source="Hawlucha" special=false offensive=false movePower=40 level=24 opponentLevel=25 stab=true opponentStat=25}
   :::::
   :::::pokemon[Granbull]{info="Remeber HP After" infoColor=pink}
      - Wing Attack x2
      - _Teach Fling over Karate Chop/Rock Smash_
-    :::if{source="Hawlucha" condition="startingLevel=19"}
      ::damage[Granbull’s Headbutt does at 23]{source="Hawlucha" special=false offensive=false movePower=70 level=23 opponentLevel=24 stab=false opponentStat=66}
-    :::
-    :::if{source="Hawlucha" condition="startingLevel=20"}
      ::damage[Granbull’s Headbutt does at 24]{source="Hawlucha" special=false offensive=false movePower=70 level=24 opponentLevel=24 stab=false opponentStat=66}
-    :::
+
   :::::  
 :::::::
 
@@ -519,7 +494,9 @@ Pick up **Black Belt**
 
 :info[Use a Soda Pop if can die to Confusion]{color=yellow}
 ::damage[Chimecho’s Confusion does at L24]{source="Hawlucha" special=true offensive=false movePower=50 level=24 opponentLevel=24 stab=true effectiveness=2 opponentStat=55}
+::damage[Chimecho’s Confusion does at L25]{source="Hawlucha" special=true offensive=false movePower=50 level=25 opponentLevel=24 stab=true effectiveness=2 opponentStat=55}
 ::damage[Golett’s Shadow Punch does at L24]{source="Hawlucha" special=false offensive=false movePower=60 level=24 opponentLevel=24 stab=true opponentStat=40}
+::damage[Golett’s Shadow Punch does at L25]{source="Hawlucha" special=false offensive=false movePower=60 level=25 opponentLevel=24 stab=true opponentStat=40}
 :::::trainer[Psychic Franz]
  ::::pokemon[Chimecho]
     - Swords Dance
@@ -527,7 +504,7 @@ Pick up **Black Belt**
  ::::
  ::::pokemon[Golett]
     - Wing Attack (x2)
-   ::damage[Wing Attack +2 Range]{source="Hawlucha" special=false offensive=true healthThreshold=62 combatStages=2 theme=error movePower=60 level=24 opponentLevel=24 stab=true  opponentStat=26 theme=error}
+   ::damage[L24 Wing Attack +2 Range]{source="Hawlucha" special=false offensive=true healthThreshold=62 combatStages=2 theme=error movePower=60 level=24 opponentLevel=24 stab=true  opponentStat=26 theme=error}
  ::::
 :::::
 
@@ -592,6 +569,7 @@ Head to the gym
 :info[One less IV if fighting Rolanda first at L28]{color=yellow}
 ::damage[L27 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=27 opponentLevel=30 stab=true opponentStat=53 theme=error}
 ::damage[L28 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=28 opponentLevel=30 stab=true opponentStat=53 theme=error}
+::damage[L28 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=29 opponentLevel=30 stab=true opponentStat=53 theme=error}
 :::::::trainer[Roller Skater Dash]
   :::::pokemon[Heracross]
      - (Swords Dance) Wing Attack
@@ -606,10 +584,10 @@ Head to the gym
      ::damage[Sawk Low Sweep does at L28]{source="Hawlucha" special=false offensive=false effectiveness=0.5 stab=true movePower=65 level=28 opponentLevel=27 opponentStat=82}
   :::::
   :::::pokemon[Hariyama]
-    :::if{source="Hawlucha" condition="atk=(x/29+/11+) && startingLevel=19"}
+    :::if{source="Hawlucha" condition="atk=(x/29+/11+)"}
      - Wing Attack
     :::
-    :::if{source="Hawlucha" condition="atk=~(x/29+/11+) && startingLevel=19"}
+    :::if{source="Hawlucha" condition="atk=~(x/29+/11+)"}
      - Flying Press
     :::
   :::::
@@ -723,32 +701,31 @@ Go right after the first climbing rope
 ::damage[Jumpluff’s Acrobatics does]{source="Hawlucha" special=false offensive=false movePower=110 level=32 opponentLevel=30 stab=true effectiveness=2 opponentStat=44}
 ::damage[Take down does]{source="Hawlucha" special=false offensive=false movePower=90 level=33 opponentLevel=34 stab=false opponentStat=88}
 
-::::::::::if{source="Hawlucha" condition="speed=~(10-/x/x) && startingLevel=20 || speed=~(18-/x/x) && startingLevel=19"}
-  :::::::trainer[Leader Ramos (without Lucario)]
-    :::::pokemon[Jumpluff]
-      - Swords Dance
-      - Wing Attack
-      - _If Hawlucha dies_
-        - Switch to Lucario
-        - **[Mega Evolve]** Swords Dance
-        - Rock Tomb
-    :::::     
-    :::::pokemon[Gogoat]
-      :::if{source="Hawlucha" condition="atk=(x/x/18+)"}
-        - Wing Attack (Low Sweep if Lucario)
-      :::
-      :::if{source="Hawlucha" condition="atk=~(x/x/18+)"}
-        - Flying Press (Low Sweep if Lucario)
-      :::
-    :::::
-    :::::pokemon[Weepinbell]
+**Do Lucario Ramos fight (teach Rock Tomb Slot 3 if necessary) if Hawlucha has 77- speed: (L32: 18-/x/x)(L33: 10-/x/x)**
+
+:::::::trainer[Leader Ramos (without Lucario)]
+   :::::pokemon[Jumpluff]
+   - Swords Dance
+   - Wing Attack
+   - _If Hawlucha dies_
+      - Switch to Lucario
+      - **[Mega Evolve]** Swords Dance
+      - Rock Tomb
+   :::::     
+   :::::pokemon[Gogoat]
+   :::if{source="Hawlucha" condition="atk=(x/x/18+)"}
       - Wing Attack (Low Sweep if Lucario)
+   :::
+   :::if{source="Hawlucha" condition="atk=~(x/x/18+)"}
+      - Flying Press (Low Sweep if Lucario)
+   :::
+   :::::
+   :::::pokemon[Weepinbell]
+   - Wing Attack (Low Sweep if Lucario)
 
-    :::::
-  :::::::
-::::::::::
+   :::::
+:::::::
 
-::::::::::if{source="Hawlucha" condition="speed=(10-/x/x) && startingLevel=20 || speed=(18-/x/x) && startingLevel=19"}
 :::::::trainer[Leader Ramos (with Lucario)]
   :::::pokemon[Jumpluff]
      - **[Mega Evolve]** Swords Dance
@@ -761,7 +738,7 @@ Go right after the first climbing rope
     - Low Sweep
   :::::
 :::::::
-::::::::::
+
 
 :::card{theme="error"}
 ### Shopping (left):
@@ -1034,12 +1011,8 @@ Pickup **Rare Candy**
  ::::
 :::::
 
-:::if{source="Hawlucha" condition="startingLevel=19"}
-Rare Candy x2 to L47. _Do not teach Calm Mind._
-:::
-:::if{source="Hawlucha" condition="startingLevel=20"}
-Rare Candy x3 to L48. _Do not teach Calm Mind._
-:::
+Rare Candy x2-3 (depending on how many were used on Hawlucha). _Do not teach Calm Mind._
+
 
 :::::trainer[Psychic Paschal]{info="Remember HP after" infoColor=pink}
   ::::pokemon[Exeggutor]
