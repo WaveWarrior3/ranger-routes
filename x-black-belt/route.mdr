@@ -49,7 +49,7 @@ _Route created by Headbob with help from WaveWarrior_
 
 
 :::card
-Set date to 3/6 and time to 23:07
+Set date to 2013-03-06 and time to 23:07
 :::
  
 
@@ -347,9 +347,10 @@ Go to Geosenge center and catch Hawlucha with Luxury Balls.
   
 ####  Level 20
 ####   - Heal Hawlucha if it got damaged
-####   - Give 1 Rare Candy to Hawlucha
 ####   - Teach Swords Dance over Roost (Slot 2)
 ####   - Teach Rock Smash over Aerial Ace (Slot 3)
+####   - _If Atk is 44- OR Spd is 49-_: Give 2 Rare Candies to Hawlucha
+####   - _Otherwise_: Give 1 Rare Candy to Hawlucha
 ####   - Get X-Speed unless 64+ Speed (x/x/22+)
 :::::
 
@@ -470,15 +471,15 @@ Use a Repel
   :::::
 :::::::
 :info[Heal to full if took damage]{color=yellow}
-:::::::trainer[Ace Trainer Monique]
+:::::::trainer[Ace Trainer Monique]{info="Heal on Doduo if dead to Granbull Headbutt" infoColor="blue"}
   :::::pokemon[Doduo]
      - Swords Dance x2
      - Wing Attack
   :::::
   :::::pokemon[Helioptile]{info="Has Quick Attack" infoColor="blue"}
-      - Karate Chop/Rock Smash
-      ::damage[Heliptile QA does at 23]{source="Hawlucha" special=false offensive=false movePower=40 level=23 opponentLevel=25 stab=true opponentStat=25}
-      ::damage[Heliptile QA does at 24]{source="Hawlucha" special=false offensive=false movePower=40 level=24 opponentLevel=25 stab=true opponentStat=25}
+     - Karate Chop/Rock Smash
+     ::damage[Helioptile QA does at 23]{source="Hawlucha" special=false offensive=false movePower=40 level=23 opponentLevel=25 stab=true opponentStat=25}
+     ::damage[Helioptile QA does at 24]{source="Hawlucha" special=false offensive=false movePower=40 level=24 opponentLevel=25 stab=true opponentStat=25}
   :::::
   :::::pokemon[Granbull]{info="Remeber HP After" infoColor=pink}
      - Wing Attack x2
@@ -564,9 +565,8 @@ Head to the gym
 
 :info[Teach Flying Press over Fling at Lv28]{color=yellow}
 
-:info[Fight Rolanda before Dash if doing so will get you a better range on Heracross]{color="red"}
+:info[Can optionally fight Rolanda before Dash if doing so will get you a better range on Heracross]{color="red"}
 
-:info[One less IV if fighting Rolanda first at L28]{color=yellow}
 ::damage[L27 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=27 opponentLevel=30 stab=true opponentStat=53 theme=error}
 ::damage[L28 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=28 opponentLevel=30 stab=true opponentStat=53 theme=error}
 ::damage[L28 +0 Wing Attack ranges]{source="Hawlucha" special=false offensive=true healthThreshold=91 effectiveness=4 theme=error movePower=60 level=29 opponentLevel=30 stab=true opponentStat=53 theme=error}
@@ -576,7 +576,7 @@ Head to the gym
   :::::
 :::::::
 :::::::trainer[Roller Skater Rolanda]
-  :::::pokemon[Sawk]
+  :::::pokemon[Sawk]{info="+0 Flying Press with Black Belt equipped 100% OHKO at L28 with atk=(28+/3+/0+)" infoColor="blue"}
     - _Faster than Sawk after one Low Sweep with 72+ Speed (L27: x/12+/0+)(L28: 31/3+/0+)_
      - Swords Dance
      - Wing Attack
@@ -601,6 +601,7 @@ Head to the gym
   :::::pokemon[Mienfoo]
     :::if{source="Hawlucha" condition="spe=~(x/x/22+)"}
      - X-Speed if you have it, otherwise heal, otherwise Swords Dance
+     - (Encore Fake Out)
      - Swords Dance until +4
      - Wing Attack
     :::
@@ -611,6 +612,7 @@ Head to the gym
     :::
     :::if{source="Hawlucha" condition="spe=(x/x/22+) && atk=~(x/x/23+)"}
      - Heal if necessary, otherwise Swords Dance
+     - (Encore Fake Out)
      - Swords Dance until +4
      - Wing Attack
     :::
@@ -656,10 +658,10 @@ Say yes to getting Lucario and give it a one character nickname
    - Wing Attack x2
   :::::
   :::::pokemon[Braixen]
-    - Flying Press
+    - Flying Press / Wing Attack if +4 and attack=(25+/1+/0+)
   :::::
   :::::pokemon[Absol]
-    - Flying Press
+    - Flying Press / Wing Attack if +4 and atk=(x/18+/0+)
   :::::
 :::::::
 Go right after the first climbing rope
@@ -741,13 +743,23 @@ Go right after the first climbing rope
 
 
 :::card{theme="error"}
-### Shopping (left):
+### Shopping (7 Proteins) (left):
 > #### Buy
 > - 11 Max Repels (^^)
 > - 1 Escape Ropte (^^^)
 > - 11 Full Heals (^)
 > - 2-3 Revives (v<)
 > - MAX Hyper Potions (^^) (17-18 with standard shopping)
+:::
+
+:::card{theme="error"}
+### Shopping (8 Proteins) (left):
+> #### Buy
+> - 11 Max Repels (^^)
+> - 1 Escape Ropte (^^^)
+> - 5 Full Heals (^)
+> - 1-2 Revives (v<)
+> - 15-16 Hyper Potions (^^)
 :::
 
 No Wind: xx:10, xx:30, xx:50 for 10 minutes
@@ -818,7 +830,7 @@ Pickup hidden **Power Plant Pass**
 :::::trainer[Team Flare Grunt]{info="Body Slam does 10-11/(12)" infoColor=blue}
  ::::pokemon[Swalot]
     - Bone Rush spam (5 hits needed)
-    - _Finish with Rock Tomb if only one hit left_
+    - _Finish with Rock Tomb/Low Sweep if only one hit left_
  ::::
 :::::
 :::::trainer[Team Flare Grunt]
@@ -828,7 +840,7 @@ Pickup hidden **Power Plant Pass**
  ::::
  ::::pokemon[Swalot]
     - Bone Rush spam (42.8% 4HKO including crits)
-    - _Finish with Rock Tomb if only one hit left_
+    - _Finish with Rock Tomb/Low Sweep if only one hit left_
     
  ::::
 :::::
@@ -858,7 +870,7 @@ Pickup hidden **Power Plant Pass**
 :::::trainer[Schoolboy Finnian (Elevator 3)]
 ::::pokemon[Dedenne]
    - Bone Rush spam (3 hits needed)
-   - _Finish with Rock Tomb if only one hit left_
+   - _Finish with Rock Tomb/Low Sweep if only one hit left_
 ::::
 :::::
 :::::trainer[Rising Star Estel (Elevator 1)]
@@ -934,7 +946,7 @@ Pickup **Rare Candy**
 
 :info[Heal if 39 (40)]{color=yellow}
 
-If healing, do so in front of the button to change conveyer direction and use a Max Repel
+:info[Max Repel if healing (menu in front of switch, later if picking up Dire Hit)]{color=red}
 
 :::::trainer[Team Flare Admin]
  ::::pokemon[Scraggy]
@@ -961,7 +973,7 @@ If healing, do so in front of the button to change conveyer direction and use a 
 
 Use 3 Proteins (or delay to Escape Rope menu)
 
-Pick up **Dire Hit**
+Optionally Pick up **Dire Hit**
 
 Max Repel if you haven't yet → Keep applied until off of Mamoswine
 :::::trainer[Team Flare Grunt]
@@ -999,6 +1011,7 @@ Pickup **Rare Candy**
     - Dire Hit
     - Swords Dance
     - (**[Mega Evolve]** if dead to 63 (64)) Shadow Claw
+    - _If you skipped Dire Hit, do Swords Dance x3 instead. You are heal looped by Psychic with this strategy._
  ::::
  ::::pokemon[Delphox]
     - Shadow Claw
@@ -1011,7 +1024,7 @@ Pickup **Rare Candy**
  ::::
 :::::
 
-Rare Candy x2-3 (depending on how many were used on Hawlucha). _Do not teach Calm Mind._
+**Rare Candy x2-3 (depending on how many were used on Hawlucha).** _Do not teach Calm Mind._
 
 
 :::::trainer[Psychic Paschal]{info="Remember HP after" infoColor=pink}
@@ -1053,7 +1066,7 @@ GYM Puzzle
  ::::
 :::::
 
-Use the last 4 Proteins whenever you have to heal
+Use the remaining Proteins whenever you have to heal
 
 Fly to the center of Lumiose City
 
@@ -1091,7 +1104,7 @@ Fly to the center of Lumiose City
 
 - Go Up-Left
 
-_Using last 4 Proteins before Swalot increases +4 OHKO from 9/16 to 12/16_
+_Using last 4-5 Proteins before Swalot increases +4 OHKO from 9/16 to 12-13/16_
 
 :::::trainer[Team Flare Grunt]
  ::::pokemon[Swalot]{info="+2 Spit Up does 30-34 (35)" infoColor=blue}
@@ -1100,7 +1113,7 @@ _Using last 4 Proteins before Swalot increases +4 OHKO from 9/16 to 12/16_
  ::::
 :::::
 
-:info[Heal to full if 45 (46) HP or less]{color=yellow}
+:info[Heal to full if 50 (51) HP or less]{color=yellow}
 
 - Take teleporter
 
@@ -1138,12 +1151,12 @@ _Using last 4 Proteins before Swalot increases +4 OHKO from 9/16 to 12/16_
  ::::
 :::::
 
-:info[Heal to full if 64 (66) HP or less]{color=yellow}
+:info[Heal to full if 70 (72) HP or less]{color=yellow}
 
 - Go Right, Right, (Dodge Spinner) Down, Right-Down
 
 :::::trainer[Team Flare Grunt]
- ::::pokemon[Golbat]{info="Acrobatics does 70/(72)" infoColor=blue}
+ ::::pokemon[Golbat]{info="Acrobatics does 70 (72)" infoColor=blue}
     - Swords Dance
     - Rock Tomb
  ::::
@@ -1165,7 +1178,7 @@ _Using last 4 Proteins before Swalot increases +4 OHKO from 9/16 to 12/16_
 
 - Run Right through door
 
-- Heal 80-
+:info[Heal 80-]{color="yellow"}
 
 :::::trainer[Team Flare Mable]
  ::::pokemon[Houndoom]
@@ -1193,11 +1206,14 @@ Heal if you can't survive two hits
 
 Fly to Geosenge Town
 
-PC Heal Lucario and Lapras:
-  - Swap Lucario and Chespin
-  - Swap Lucario and Chespin
-  - Swap Lapras and Chespin
-  - Withdraw everything (remember Lapras’ spot)
+
+:::::card
+### PC Heal Lucario and Lapras
+####  - Swap Lucario and Chespin
+####  - Swap Lucario and Chespin
+####  - Swap Lapras and Chespin
+####  - Withdraw everything (remember Lapras’ spot)
+:::::
 
 :::::trainer[Team Flare Grunt]
  ::::pokemon[Manectric]
@@ -1249,7 +1265,7 @@ Equip **Black Belt** at some point before second Admin Double fight
     - Aura Sphere
  ::::
  ::::pokemon[Manectric]{info="Discharge does 54 (55)" infoColor=blue}
-    - Aura Sphere (4/16 OHKO without help)
+    - Aura Sphere (6/16 OHKO without help, 73.44% with Fake Out)
  ::::
 :::::
 
@@ -1442,10 +1458,10 @@ Heal to full
     - Close Combat
  ::::
  ::::pokemon[Raichu]{info="Quick Attack does 15" infoColor=blue}
-    - Close Combat
+    - Close Combat/Rock Tomb if +4
  ::::
  ::::pokemon[Kingdra]{info="Scald does 60 (61)" infoColor=blue}
-    - (Heal para if static)
+    - (Full Restore if static/burned)
     - Close Combat
  ::::
 :::::
@@ -1474,7 +1490,7 @@ Equip **Lucarionite**
     - Shadow Claw
   ::::
   ::::pokemon[Jolteon]{info="Slower without Steadfast boost" infoColor=red}
-    - Close Combat
+    - Close Combat :info[Discharge does 76 (78), Quick Attack does 10]{color="blue"}
   ::::
   ::::pokemon[Altaria]
     - Rock Tomb
@@ -1493,7 +1509,7 @@ Equip **Lucarionite**
 
 :::::trainer[Veteran Gerard]
  ::::pokemon[Banette]
-    - **[Mega Evolve] Shadow Claw
+    - **[Mega Evolve]** Shadow Claw
  ::::
  ::::pokemon[Leafeon]
     - Close Combat (10/16 range)
@@ -1545,7 +1561,7 @@ Equip **Lucarionite**
 
 PC Heal Lucario
 
-Deposit all Pokémon **except Lucario and Chespin**
+Deposit all Pokémon **except Lucario and one of Bulbasaur/Chespin/Squirtle**
 
 Buy Full Restores (>) if none left or low on Hypers
 
@@ -1589,7 +1605,7 @@ Buy Full Restores (>) if none left or low on Hypers
       - Close Combat
  ::::
  ::::pokemon[Aegislash]
-    - Shadow Claw :info[14/16 OHKO at +4]{color="blue"}
+    - Shadow Claw :info[14-15/16 OHKO at +4 for 7-8 Proteins]{color="blue"}
  ::::
  ::::pokemon[Scizor]
     - Heal to Full
@@ -1611,7 +1627,7 @@ Buy Full Restores (>) if none left or low on Hypers
     - Close Combat
  ::::
  ::::pokemon[Altaria]
-    - Close Combat
+    - Close Combat (Rock Tomb if no CC left)
  ::::
 :::::
 
@@ -1619,14 +1635,14 @@ Heal to full
 
 Ether Close Combat
 
-**Turn On Switch Mode**
+**Turn On Switch Mode (can skip for Siebold yolo, saves ~6 seconds, ~85-90% to live)**
 
 :::::trainer[Elite Four Siebold]
  ::::pokemon[Clawitzer]
     - **[Mega Evolve]** Close Combat
  ::::
  ::::pokemon[Gyarados]
-    - Switch out and die
+    - Switch to Bulbasaur/Chespin/Squirtle and die
     - Swords Dance
     - Close Combat
  ::::
@@ -1642,30 +1658,21 @@ Ether Close Combat
 :::::trainer[Champion Diantha]
   ::::pokemon[Hawlucha]
     - Swords Dance 
-    - Close Combat
-  ::::
-  ::::pokemon[Goodra]
     - _If you got hit by Flying Press_
-      - **[Mega Evolve]** Close Combat
+      - **[Mega Evolve]** Shadow Claw
     - _Otherwise_
       - Close Combat
+  ::::
+  ::::pokemon[Goodra]
+    - Close Combat
   ::::
   ::::pokemon[Tyrantrum]
     - Close Combat
   ::::
   ::::pokemon[Aurorus]
-    - Rock Tomb/Close Combat if you took no damage
-    - _If miss and no Reflect is up_
-      - Rock Tomb again
-    - _If miss, you are at full HP and Aurorus used Reflect_
-      - Swords Dance
-      - _If you got hit by Thunder_
-        - **[Mega Evolve]** Rock Tomb
-      - _If Thunder missed or went for Light Screen_
-        - Swords Dance 
-        - Rock Tomb
+    - Close Combat
   ::::
-  ::::pokemon[Gourgeist]
+  ::::pokemon[Gourgeist]{info="Live Phantom Force from full at -2 Defense" infoColor="blue"}
     - _If took damage_
       - Heal to full
       - _If Gourgeist uses Phantom Force_
