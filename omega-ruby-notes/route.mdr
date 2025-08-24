@@ -140,8 +140,8 @@ Immediately after entering Rusturf Tunnel:
  :::
 
 :::::::trainer[Team Magma Grunt]
-  :::::pokemon[Poochyena]{info="Faster before Rock Tomb hit at 15+ Speed (20+ / 4+ / 0+)" infoColor=blue}
-   :::if{source="Mudkip" condition="$rtskip && spatk=(24+/ 9+ / #) && speed=(24+/ 12+ / 4+) && atk=~(x/ x / 19+)"}
+  :::::pokemon[Poochyena]{info="Faster before Rock Tomb hit at 16+ Speed (29+ / 12+ / 4+)" infoColor=blue}
+   :::if{source="Mudkip" condition="$rtskip && spatk=(24+/ 9+ / #) && speed=(29+/ 12+ / 4+) && atk=~(x/ x / 19+)"}
      - Water Gun x3
    :::
    :::if{source="Mudkip" condition="$rtskip && atk=(x/ x / 19+)"} 
